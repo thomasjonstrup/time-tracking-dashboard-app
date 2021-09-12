@@ -1,6 +1,9 @@
 import React from "react";
 
 import iconWork from "../images/icon-work.svg";
+
+import { Images } from "./Images";
+
 import { timeTrackType } from "./Main";
 
 interface CardProps {
@@ -18,15 +21,17 @@ const Card: React.FC<CardProps> = ({ data, tab = "weekly" }) => {
 		return `${hour}hrs`;
 	};
 
+	const titleFormatted: string = title.toLocaleLowerCase().replace(" ", "-");
+
+	//@ts-ignore
+	const image = Images[titleFormatted];
+	console.log("title :>> ", titleFormatted);
+
 	return (
 		<div className="card">
-			<div
-				className={`card__top card__top--${title
-					.toLocaleLowerCase()
-					.replace(" ", "-")}`}
-			>
+			<div className={`card__top card__top--${titleFormatted}`}>
 				<div className="card__icon">
-					<img src={iconWork} alt="image-jeremy" />
+					<img src={image} alt="image-jeremy" />
 				</div>
 			</div>
 			<div className="card__content">

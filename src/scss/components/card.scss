@@ -65,40 +65,21 @@
 		justify-content: flex-end;
 		&--work {
 			background-color: $light-red;
-
-			img {
-				content: url("src/images/icon-work.svg");
-			}
 		}
 		&--play {
 			background-color: $soft-blue;
-			img {
-				content: url("src/images/icon-play.svg");
-			}
 		}
 		&--study {
 			background-color: $light-red-study;
-			img {
-				content: url("src/images/icon-study.svg");
-			}
 		}
 		&--exercise {
 			background-color: $lime-green;
-			img {
-				content: url("src/images/icon-exercise.svg");
-			}
 		}
 		&--social {
 			background-color: $violet;
-			img {
-				content: url("src/images/icon-social.svg");
-			}
 		}
 		&--self-care {
 			background-color: $soft-orange;
-			img {
-				content: url("src/images/icon-self-care.svg");
-			}
 		}
 	}
 
