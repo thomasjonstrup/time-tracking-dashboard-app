@@ -11,6 +11,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ data, tab = "weekly" }) => {
 	const { title, timeframes } = data;
 
+	// @ts-ignore
 	const timeframe: { current: string; previous: string } = timeframes[tab];
 
 	const formathours = (hour: string): string => {
