@@ -1,6 +1,6 @@
-@use '../util/' as *;
-@use 'fonts';
-@use 'colors';
+@use "../util/" as *;
+@use "fonts";
+@use "colors";
 
 // Reset
 
@@ -28,6 +28,10 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
 }
 
 .grid {
