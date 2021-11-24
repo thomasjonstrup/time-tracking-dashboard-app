@@ -15,13 +15,13 @@ function App() {
 	}, []);
 
 	return (
-		<div className="container">
+		<main className="container">
 			<div className="grid mt-10">
 				<Header changeTab={handleChangeTab} tab={tab} />
 				<Main tab={tab} />
 			</div>
 			<Footer />
-		</div>
+		</main>
 	);
 }
 

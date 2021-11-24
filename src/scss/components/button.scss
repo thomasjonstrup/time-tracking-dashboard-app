@@ -1,11 +1,11 @@
-@use '../util/' as *;
-@use '../globals/' as *;
+@use "../util/" as *;
+@use "../globals/" as *;
 
 .btn {
 	display: inline-flex;
 	border-radius: 0.8rem;
 	padding: 1rem 1rem;
-	outline: none;
+	cursor: pointer;
 	border: none;
 	transition: 0.23s ease-in-out;
 	width: 100%;
